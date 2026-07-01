@@ -1,0 +1,29 @@
+# 1. Initialize the hidden .git directory (the local tracking database)
+git init
+
+# 2. Add all existing files to the Staging Area (preparing the initial snapshot)
+git add .
+
+# 3. Create your absolute first commit with a clear, standard message
+git commit -m "chore: initial commit"
+
+# 4. Ensure your default branch is explicitly named 'main' (modern industry standard)
+git branch -M main
+
+# 5. Link your local repository to your remote hosting provider (GitHub, GitLab, Bitbucket)
+# Replace the URL below with your actual repository link
+git remote add origin https://github.com/username/repo-name.git
+
+# 6. Push and lock in the tracking connection (-u sets the upstream link)
+git push -u origin main
+
+
+
+# 1. Stage your modified or newly created files
+git add .
+
+# 2. Commit the changes to your local history using conventional commit syntax
+git commit -m "feat: add user login validation logic"
+
+# 3. Push cleanly to the remote server (no extra arguments required)
+git push
